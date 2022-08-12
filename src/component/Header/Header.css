@@ -1,0 +1,259 @@
+.header {
+  /* margin-top: 10px; */
+  width: 100%;
+  height: 6rem;
+  display: grid;
+  background: rgba(0, 0, 0, 0.5);
+  position: relative;
+  grid-template-columns: 10rem 1fr 2fr 1fr 10rem;
+}
+
+.overlay {
+  position: absolute;
+  width: 100%;
+  height: 6rem;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  justify-content: flex-end;
+  align-items: flex-start;
+  /* background: radial-gradient(
+    circle at -4% -12.9%,
+    rgb(74, 98, 110) 0.3%,
+    rgb(30, 33, 48) 90.2%
+  ); */
+  background-image: linear-gradient(
+    rgba(100, 100, 100, 0.603),
+    rgb(31, 31, 31),
+    rgba(100, 100, 100, 0.603)
+  );
+  opacity: 1;
+  transition: opacity 0.3s;
+}
+
+.logo {
+  grid-column: 2/3;
+  justify-content: start;
+  display: grid;
+  align-items: center;
+}
+
+.logo ion-icon {
+  font-size: 30px;
+  color: white;
+}
+
+.menu-links {
+  grid-column: 3/4;
+}
+
+.menu-links ul {
+  height: 6rem;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  list-style-type: none;
+}
+.menu-links ul a {
+  color: rgb(255, 254, 254);
+  text-decoration: none;
+  list-style: none;
+  font-size: 20px;
+}
+
+.social-media {
+  grid-column: 4/5;
+}
+
+.social-media ul {
+  height: 6rem;
+  display: grid;
+  grid-template-columns: 3fr repeat(3, 1fr);
+  justify-content: flex-end;
+  align-items: center;
+  list-style-type: none;
+}
+
+.social-media ul li {
+  text-align: right;
+  list-style-type: none;
+}
+
+.social-media ul li:first-child {
+  grid-column: 2/3;
+}
+
+.social-media ul li {
+  font-size: 1.8rem;
+  list-style: none;
+}
+
+.social-media .hamburger-menu {
+  display: none;
+  color: rgb(255, 255, 255);
+}
+
+.hamburger-menu a {
+  color: rgb(255, 255, 255);
+}
+
+.git {
+  color: #ffffff;
+}
+
+.imdb {
+  color: #f2ff42;
+}
+
+.heart {
+  color: #f30606;
+  cursor: pointer;
+}
+
+/* less than 1080px */
+@media (max-width: 1080px) {
+  .header {
+    height: 7rem;
+    grid-template-columns: 2rem 3fr 3fr 1fr 2rem;
+  }
+
+  .logo,
+  .menu-link ul,
+  .social-media ul {
+    /* height: 3rem; */
+    color: black;
+    list-style-type: none;
+  }
+  /* .hamburger-menu {
+    display: none;
+  } */
+}
+
+@media (max-width: 998px) {
+  .header {
+    height: 6rem;
+    grid-template-columns: 2rem 2fr 3fr 2rem 2rem;
+  }
+
+  .menu-links {
+    display: none;
+  }
+
+  .mobile-menu-link {
+    grid-column: 2/4;
+    position: relative;
+    z-index: 99;
+    color: black;
+  }
+
+  .mobile-menu-link {
+    background-color: rgb(37, 37, 37);
+    height: 20rem;
+    color: rgb(236, 235, 235);
+    display: grid;
+    grid-column: 2/5;
+    align-items: center;
+    padding-left: 3rem;
+    transition: all 2s linear;
+    transform-origin: top;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px,
+      rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
+  }
+
+  .mobile-menu-link ul {
+    height: 20rem;
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column;
+    align-items: start;
+    list-style-type: none;
+  }
+
+  .mobile-menu-link ul li:first-child {
+    transition-delay: 0.2s;
+  }
+
+  .logo,
+  .social-media ul {
+    height: 7rem;
+    list-style-type: none;
+  }
+
+  .social-media {
+    grid-row: 1/2;
+    grid-column: 3/5;
+    justify-items: end;
+    align-items: center;
+    transition: all 2s linear;
+  }
+
+  .social-media .social-media-desktop {
+    height: 0;
+    display: none;
+  }
+
+  .social-media {
+    height: 7rem;
+    display: flex;
+    justify-self: end;
+    align-items: center;
+  }
+
+  .social-media .hamburger-menu {
+    display: block;
+    font-size: 2.5rem;
+  }
+}
+
+@media (max-width: 798px) {
+  .header {
+    height: 6rem;
+    grid-template-columns: 1rem 2fr 1fr 1fr 1rem;
+  }
+
+  .logo,
+  .social-media ul {
+    height: 6rem;
+  }
+
+  .social-media {
+    height: 6rem;
+    display: flex;
+    justify-self: end;
+    align-items: center;
+  }
+
+  .social-media .hamburger-menu {
+    display: block;
+    font-size: 2.5rem;
+  }
+  .movie_poster {
+    width: 233px;
+  }
+}
+
+@media (max-width: 520px) {
+  .header {
+    height: 6rem;
+    grid-template-columns: 1rem 4fr 1fr 1fr 1rem;
+  }
+
+  .logo,
+  .social-media ul {
+    height: 6rem;
+  }
+
+  .social-media {
+    height: 6rem;
+    display: flex;
+    justify-self: end;
+    align-items: center;
+  }
+
+  .social-media .hamburger-menu {
+    display: block;
+    font-size: 2.5rem;
+  }
+
+  /* hero section  */
+}
