@@ -2,4 +2,4 @@
 Created with CodeSandbox
 
 
-Live URL: - http://shorturl.at/GVWZ8
+Live URL: - https://imdbmovie-app.netlify.app/
