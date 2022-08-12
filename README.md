@@ -1,4 +1,4 @@
-# MovieApp
+# MovieApp Using React JS
 Created with CodeSandbox
 
 
