@@ -44,12 +44,12 @@ const Header = () => {
         <div className="social-media">
           <ul className="social-media-desktop">
             <li>
-              <a href="https://github.com/Ritika122001/" target="_thapa">
+              <a href="https://github.com/Ritika122001/MovieApp" >
                 <FaGithub className="git" />
               </a>
             </li>
             <li>
-              <a href="https://www.imdb.com/" target="_thapa">
+              <a href="https://www.imdb.com/">
                 <FaImdb className="imdb" />
               </a>
             </li>
